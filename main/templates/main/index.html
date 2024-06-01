@@ -1,14 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Главная страница</title>
+    {% comment %} <link rel="stylesheet" href="{% static %}"></link> {% endcomment %}
   </head>
+
   <body>
     <div class="main">
       <div class="main__wrapper">
         <div class="main__sign">
-          <img src="assets/title_sing.png" class="main__sign--img" />
+          <img src="{% static "main/title_sing.png" %}" class="main__sign--img" />
           <div class="main__sign--title">Мировое виноделие</div>
         </div>
         <div class="main__info">
@@ -27,7 +31,7 @@
           </div>
         </div>
         <div class="main__world-map">
-          <img src="assets/europe_map_mini.png" class="main__world-map--img" />
+          <img src="{% static "main/europe_map_mini.png" %}" class="main__world-map--img" />
           <div class="main__world-map--clip-path-france"></div>
           <div class="main__world-map--tooltip-france">
             Франция то се пятое десятое
