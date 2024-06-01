@@ -66,11 +66,10 @@
         </div>
         <div class="main__world-map">
           <img src="{% static "main/europe_map_mini.png" %}"
-          class="main__world-map--img" />
+          class="main__world-map--img" title="">
+          <div class="main__world-map--clip-path-france" title="
+          Во Франции площади виноградников 797 тысяч Га в 80 департаментах, что составляет 1,3 % территории страны и 2,8 % земель сельхозназначения. Основных винодельческих регионов во Франции десять – это Эльзас, Бордо, Бургундия, Шампань, Долина Роны, Прованс, Корсика, Юго-Западный регион. Каждый имеет свои особенности. Самые известные французские вина родом из Бордо и Бургундии. Французское вино составляет 13 % мирового экспорта вина.">
           <div class="main__world-map--clip-path-france"></div>
-          <div class="main__world-map--tooltip-france">
-            Франция то се пятое десятое
-          </div>
         </div>
       </div>
     </div>
@@ -186,7 +185,7 @@
     .main__world-map--clip-path-france {
       position: absolute;
       left: 210px;
-      top: 380px;
+      top: 390px;
       height: 300px;
       width: 330px;
       background-color: #222;
@@ -196,8 +195,8 @@
         11% 11%,
         28% 16%,
         34% 6%,
-        49% 14%,
-        55% 12%,
+        49% 10%,
+        60% 2%,
         66% 0%,
         81% 18%,
         99% 34%,
@@ -205,19 +204,20 @@
         78% 63%,
         88% 66%,
         97% 89%,
-        84% 99%,
-        45% 90%,
-        29% 99%,
-        10% 89%,
-        18% 69%,
-        14% 49%,
-        15% 41%
+        75% 100%,
+        60% 90%,
+        45% 99%,
+        14% 80%,
+        22% 69%,
+        22% 49%,
+        22% 35%
       );
     }
     .main__world-map--tooltip-france {
       position: absolute;
       left: 400px;
       top: 400px;
+      width: 500px;
       padding: 10px;
       color: black;
       border: 1px solid black;
