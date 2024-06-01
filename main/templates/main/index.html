@@ -66,10 +66,13 @@
         </div>
         <div class="main__world-map">
           <img src="{% static "main/europe_map_mini.png" %}"
-          class="main__world-map--img" title="">
-          <div class="main__world-map--clip-path-france" title="
-          Во Франции площади виноградников 797 тысяч Га в 80 департаментах, что составляет 1,3 % территории страны и 2,8 % земель сельхозназначения. Основных винодельческих регионов во Франции десять – это Эльзас, Бордо, Бургундия, Шампань, Долина Роны, Прованс, Корсика, Юго-Западный регион. Каждый имеет свои особенности. Самые известные французские вина родом из Бордо и Бургундии. Французское вино составляет 13 % мирового экспорта вина.">
-          <div class="main__world-map--clip-path-france"></div>
+          class="main__world-map--img" >
+          <div
+            class="main__world-map--clip-path-france"
+            title="
+          Во Франции площади виноградников 797 тысяч Га в 80 департаментах, что составляет 1,3 % территории страны и 2,8 % земель сельхозназначения. Основных винодельческих регионов во Франции десять – это Эльзас, Бордо, Бургундия, Шампань, Долина Роны, Прованс, Корсика, Юго-Западный регион. Каждый имеет свои особенности. Самые известные французские вина родом из Бордо и Бургундии. Французское вино составляет 13 % мирового экспорта вина."
+          ></div>
+          <div class="main__world-map--clip-path-italy" title="italy"></div>
         </div>
       </div>
     </div>
@@ -203,7 +206,7 @@
         93% 49%,
         78% 63%,
         88% 66%,
-        97% 89%,
+        88% 91%,
         75% 100%,
         60% 90%,
         45% 99%,
@@ -213,21 +216,29 @@
         22% 35%
       );
     }
-    .main__world-map--tooltip-france {
+    .main__world-map--clip-path-italy {
       position: absolute;
-      left: 400px;
-      top: 400px;
-      width: 500px;
-      padding: 10px;
-      color: black;
-      border: 1px solid black;
-      border-radius: 8px;
-      background-color: white;
-      opacity: 0;
-    }
-    .main__world-map--clip-path-france:hover
-      + .main__world-map--tooltip-france {
-      opacity: 1;
+      left: 500px;
+      top: 550px;
+      height: 400px;
+      width: 330px;
+      background-color: #222;
+      opacity: 0.5;
+      clip-path: polygon(
+        55% 97%,
+        90% 73%,
+        40% 30%,
+        52% 12%,
+        40% 5%,
+        21% 1%,
+        0% 10%,
+        0% 30%,
+        18% 36%,
+        42% 60%,
+        60% 70%,
+        25% 85%,
+        50% 100%
+      );
     }
   </style>
 </html>
