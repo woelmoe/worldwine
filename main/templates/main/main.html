@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__wrapper">
+        <div class="main__sign">
+          <img src="assets/title_sing.png" class="main__sign--img" />
+          <div class="main__sign--title">Мировое виноделие</div>
+        </div>
+        <div class="main__info">
+          <div class="main__info--t1">
+            * Просто вводная информация по виноделию *
+          </div>
+          <div class="main__info--t2">
+            Топ-5 стран по объемам вина за 2023г. (в млн гектолитров):
+            <ol>
+              <li>Франция - 45,8</li>
+              <li>Италия - 43,9</li>
+              <li>Испания - 30,7</li>
+              <li>Германия - 9,0</li>
+              <li>Португалия - 7,4</li>
+            </ol>
+          </div>
+        </div>
+        <div class="main__world-map">
+          <img src="assets/europe_map_mini.png" class="main__world-map--img" />
+          <div class="main__world-map--clip-path-france"></div>
+          <div class="main__world-map--tooltip-france">
+            Франция то се пятое десятое
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!--https://bennettfeely.com/clippy/-->
+
+  <style>
+    body {
+      font-family: PTSans, Arial, sans-serif, Roboto, Verdana;
+    }
+    .main {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+    }
+    .main__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main__sign {
+      position: relative;
+      width: calc(100% - 50px);
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main__sign--img {
+      width: 1000px;
+      object-fit: fill;
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(0px 5px 5px #222);
+    }
+    .main__sign--title {
+      position: absolute;
+      top: 55px;
+      width: 100%;
+      min-width: 1000px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 5px 5px #000, 0 1px 5px #000, -1px 0 5px #000,
+        0 -1px 5px #000;
+    }
+    .main__info {
+      position: relative;
+      margin-top: 50px;
+      min-height: 300px;
+      left: -200px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: left;
+    }
+    .main__info--t1 {
+      font-weight: bold;
+      font-size: 30px;
+      padding: 12px;
+    }
+    .main__info--t2 {
+      font-size: 20px;
+      padding: 40px;
+    }
+    .main__world-map {
+      height: 500px;
+    }
+    .main__world-map {
+      position: relative;
+      height: 1000px;
+      width: 1000px;
+    }
+    .main__world-map--img {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+    .main__world-map--clip-path-france {
+      position: absolute;
+      left: 150px;
+      top: -400px;
+      height: 1400px;
+      width: 1400px;
+      clip-path: polygon(
+        26% 76%,
+        25% 68%,
+        28% 62%,
+        22% 57%,
+        19% 55%,
+        15% 58%,
+        12% 58%,
+        11% 60%,
+        6% 59%,
+        10% 67%,
+        8% 74%,
+        16% 78%,
+        19% 76%,
+        23% 78%
+      );
+    }
+    .main__world-map--tooltip-france {
+      position: absolute;
+      left: 400px;
+      top: 400px;
+      padding: 10px;
+      color: black;
+      border: 1px solid black;
+      border-radius: 8px;
+      background-color: white;
+      opacity: 0;
+    }
+    .main__world-map--clip-path-france:hover
+      + .main__world-map--tooltip-france {
+      opacity: 1;
+    }
+  </style>
+</html>
