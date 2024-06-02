@@ -25,7 +25,7 @@
       />
     </div>
     <div class="main__wine_background">
-      <img src="{% static "main/wine_background.jpeg" %}"
+      <img src="{% static "main/wine_background.png" %}"
       class="main__wine_background--img" />
     </div>
     {% block content %}{% endblock content %}
@@ -112,10 +112,6 @@
       height: 100vh;
       transform: rotate(180deg);
     }
-    .main__wine_background {
-      position: fixed;
-      width: 105vw;
-    }
     .main {
       position: fixed;
       width: 100%;
@@ -137,6 +133,11 @@
     .main__wallpaper--img {
       width: 100%;
       height: 100%;
+    }
+    .main__wine_background {
+      position: fixed;
+      width: 105vw;
+      min-width: 1600px;
     }
     .main__wine_background--img {
       object-fit: contain;
