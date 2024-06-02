@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>О проекте</title>
-  </head>
-  <body></body>
+{% extends "main/layout.html" %}
+{% load static %}
+{% block title %}О проекте{% endblock title %}
 
-  <!--https://bennettfeely.com/clippy/-->
-
-  <style></style>
-</html>
+{% block content %}
+<div class="main">
+  <div class="main__wrapper">
+    <div class="main__sign">
+      <img class="main__sign--img" src="{% static "main/title_sing.png" %}"
+      />
+      <div class="main__sign--title">Мировое виноделие</div>
+    </div>
+    <div class="main__info">
+      <div class="main__info--t1">
+        Cайт предоставляет информацию для ознакомления о развитии виноградарства в разные периоды времени, о его влиянии на развитие разных стран и их винопроизводство.
+        Основная цель данного ресурса - ознакомление с историей зарождения винопроизводства в разных уголках земли. Содержит информацию о крупнейших винодельческих странах, их обороте, статистике и перспективе на будущее.
+      </div>
+  </div>
+</div>
+{% endblock %}

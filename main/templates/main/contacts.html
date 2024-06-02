@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Контакты</title>
-  </head>
-  <body></body>
+{% extends "main/layout.html" %}
+{% load static %}
+{% block title %}Контакты{% endblock title %}
 
-  <!--https://bennettfeely.com/clippy/-->
-
-  <style></style>
-</html>
+{% block content %}
+<div class="main">
+  <div class="main__wrapper">
+    <div class="main__sign">
+      <img class="main__sign--img" src="{% static "main/title_sing.png" %}" />
+      <div class="main__sign--title">Мировое виноделие</div>
+    </div>
+    <div class="main__info">
+      <div class="main__info--t1">
+        <p class="table">
+          <span class="table__left">Номер телефона:</span>
+          <span >8-961-423-42-12</span>
+        </p>
+        <p class="table">
+          <span class="table__left">email:</span>
+          <span >mirovoye.vinodeliye@mail.ru</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
