@@ -1,0 +1,57 @@
+.DS_Store
+/node_modules
+
+package-lock.json
+
+/out
+/dist
+/storybook-static
+/synerget5-update.zip
+/AutoInstall-donotdelete
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# ssh-key
+ssh-key
+ssh-key.pub
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+
+# archives
+
+*.rar
+*.zip
+
+# c++ modules
+config.gypi
+handleKeyboard.target.mk
+Makefile
+obj
+.deps
+obj.target
+*.sln
+*.sw?
+*.exp
+*.iobj
+*.ipdb
+*.lib
+*.pdb
+*.vcxproj
+*.filters
+*.Makefile
