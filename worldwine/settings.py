@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gf33%sx%2nrhw9q@3y3-_tlsxkg@l4e(3jj99z6y2hw^q*qetg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["hollowone.pythonanywhere.com"]
 
 
 # Application definition
@@ -116,7 +116,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL="/static/"
+STATIC_ROOT ="/home/hollowone/worldwine/main/static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
